@@ -4,9 +4,7 @@ $b = (int)fgets(STDIN);
 $c = (int)fgets(STDIN);
 
 $maiorAB = ($a+$b+abs($a - $b))/2;
+$maiorABC = ($maiorAB+$c+abs($maiorAB - $c))/2;
 
-if ($maiorAB > $c){
-    echo $maiorAB." eh o maior". PHP_EOL;
-} else{
-    echo $c." eh o maior". PHP_EOL;
-}
+echo $maiorABC." eh o maior". PHP_EOL;
+
